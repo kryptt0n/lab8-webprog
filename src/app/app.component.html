@@ -1,3 +1,4 @@
 <app-header />
+<app-add-task (addTask)="onAddTask($event)"></app-add-task>
 <app-filter-task-list (filterTasks)="handleFilter($event)"/>
-<app-task-list [taskList]="filteredTasks"/>
+<app-task-list [taskList]="taskList"/>
