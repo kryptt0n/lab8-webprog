@@ -1,0 +1,14 @@
+<h2>Add a New Task</h2>
+
+<form (ngSubmit)="onAddTask()">
+  <label for="task">Task:</label>
+  <input
+    type="text"
+    id="task"
+    [(ngModel)]="newTask"
+    name="task"
+    required
+  />
+
+  <button type="submit">Add Task</button>
+</form>
